@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
     <meta charset="utf-8">
     <title>Quiz App</title>
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <header>
-      Instructor Pilot Handbook: Psychology of Learning Quiz
+      Aviation Instructor Handbook: Psychology of Learning Quiz
     </header>
-    <div class="js-quiz-container">
-      <span class="js-question-span">According to the Instructor Pilot Handbook, what are the four Levels of Learning?</span><span class="js-question-number-span">Question 1/5</span></br>
-      <input type="checkbox" name="A" value="" class="js-input-answer-a">A: <span class="js-span-answer-a">Rote, Understanding, Application, Correlation</span></br>
-      <input type="checkbox" name="B" value="" class="js-input-answer-b">B: <span class="js-span-answer-b">Rote, Understanding, Application, Execution</span></br>
-      <input type="checkbox" name="C" value="" class="js-input-answer-c">C: <span class="js-span-answer-c">Memorization, Understanding, Application, Confusion</span></br>
-      <input type="checkbox" name="D" value="" class="js-input-answer-d">D: <span class="js-span-answer-d">Remember, Consider, Execute, Understand</span></br>
-      <button type="button" name="button" class="js-submit-answer-button">Submit</button>
-      <span class="js-current-score-span">Current score: 0/5 Answers Correct</span>
+    <div class="js-start container">
+      <button type="button" name="button" class="js-begin-quiz-button">Begin Quiz</button>
     </div>
+    <div class="hidden js-quiz-container">
+
+    </div>
+    <div class="hidden js-score-container">
+      <h4 class="js-score">Current Score: 0/10</h4>
+    </div>
+    <div class="hidden js-end-of-quiz">
+
+    </div>
+    <span class="span-disclaimer">All questions are taken from the
+      <a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/aviation_instructors_handbook/media/faa-h-8083-9a.pdf">
+         Aviation Instructors Handbook</a>
+    </span>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="app.js"></script>
